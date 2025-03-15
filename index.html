@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Audio Player (Hidden) -->
+   
+    
+    <div class="loading-screen">
+        <div class="loading-content">
+            <h1 class="loading-title">WELCOME TO THE KINGS REALM</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+   
     <div class="audio-player">
         <audio id="bgMusic1" loop preload="auto">
             <source src="media/Home.mp3" type="audio/mp3">
@@ -24,7 +34,6 @@
         </audio>
     </div>
     
-    <!-- Music Toggle Button -->
     <div class="music-toggle music-active">
         <i class="fas fa-volume-up"></i>
     </div>
@@ -60,11 +69,18 @@
                                 <i class="fas fa-terminal"></i> BIO
                             </div>
                             <div class="bio-text">
-                                <p>Professional developer navigating both the light and dark realms of code. Master of multiple programming languages and digital security.</p>
-                                <p>Pro developer specializing in <span class="highlight">C++</span>, <span class="highlight">C#</span>, <span class="highlight">Java</span>, <span class="highlight">HTML</span>, <span class="highlight">CSS</span> and <span class="highlight">Ethical Hacking</span>.</p>
+                                <p>Professional developer navigating both the light and dark realms of code. Master of multiple programming languages and digital security. Also a passionate football player in my free time.</p>
+                                <p>Pro developer specializing in <span class="highlight">C++</span>, <span class="highlight">C#</span>, <span class="highlight">Java</span>, <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">Reverse Engineering</span> and <span class="highlight">Ethical Hacking</span>.</p>
                                 <div class="bio-quote">"The only way to do great work is to love what you do."</div>
                             </div>
                         </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="view-counter">
+                        <i class="fas fa-eye"></i>
+                        <span id="viewCount">1</span>
                     </div>
                 </div>
             </div>
@@ -79,6 +95,8 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>Hi everyone, I'm Dev_Shadow, also known as Advaith Praveen. I'm a cybersecurity enthusiast and a developer with expertise in various programming languages. You'll find my skills outlined in the skills section, and I'll be adding some of the projects I've worked on soon. This is one of my ongoing projects, and I hope you all enjoy it! FYI : Yes, I am Owner of DT Sources in discord</p>
+                        <p>When I'm not coding or working on cybersecurity, I'm on the football field. Football is my passion outside the digital world, helping me maintain balance between my technical pursuits and physical activity.</p>
+                        <p>I'm particularly skilled in reverse engineering software and applications, breaking down complex systems to understand their inner workings. This expertise complements my cybersecurity background and allows me to identify vulnerabilities more effectively.</p>
                         <p>Feel free to provide feedback or suggestions for improvements—I'm always open to learning and growing. If you'd like to get in touch, you can reach me at <span class="highlight">advaithpro13@gmail.com</span>.</p>
                         <p>Wishing you all a fantastic day ahead! Ciao!</p>
                     </div>
@@ -146,16 +164,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="skill">
+                    <div class="skill-name">Reverse Engineering</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="100">
+                            <div class="progress-text">100%</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
-    <!-- Terminal Toggle Button -->
+    
     <div class="terminal-toggle">
         <i class="fas fa-terminal"></i>
     </div>
     
-    <!-- Floating Terminal -->
+    <div class="football-toggle">
+        <i class="fas fa-futbol"></i>
+    </div>
+   
     <div class="floating-terminal">
         <div class="terminal-header">
             <i class="fas fa-terminal"></i> CONSOLE
@@ -177,11 +206,46 @@
         </div>
     </div>
     
-    <!-- Music Info Display -->
+    <div class="floating-football">
+        <div class="football-header">
+            <i class="fas fa-futbol"></i> FOOTBALL CHALLENGE
+            <div class="terminal-buttons">
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+                <span class="terminal-button close"></span>
+            </div>
+        </div>
+        <div class="football-body">
+            <div class="game-instructions">
+                <p>Use <span class="key">A</span> and <span class="key">D</span> to move, <span class="key">SPACE</span> to shoot</p>
+                <p>Score as many goals as you can!</p>
+            </div>
+            <div class="game-stats">
+                <div class="game-score">Score: <span id="gameScore">0</span></div>
+                <div class="game-time">Time: <span id="gameTime">30</span>s</div>
+            </div>
+            <div class="game-field">
+                <canvas id="footballGame"></canvas>
+                <div class="game-overlay">
+                    <button id="startGame" class="game-button">
+                        <i class="fas fa-play"></i> Play Game
+                    </button>
+                </div>
+            </div>
+            <div class="game-controls">
+                <button id="resetGame" class="game-button">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+        </div>
+    </div>
+    
     <div class="music-info">
         <div class="music-title">No track playing</div>
         <div class="music-controls">
             <button class="music-prev"><i class="fas fa-step-backward"></i></button>
+            <button class="music-play-pause"><i class="fas fa-play"></i></button>
+            <button class="music-mute"><i class="fas fa-volume-up"></i></button>
             <button class="music-next"><i class="fas fa-step-forward"></i></button>
         </div>
     </div>
