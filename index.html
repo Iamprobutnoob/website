@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Shadow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Audio Player (Hidden) -->
+    <div class="audio-player">
+        <audio id="bgMusic1" loop preload="auto">
+            <source src="media/Home.mp3" type="audio/mp3">
+        </audio>
+        <audio id="bgMusic2" loop preload="auto">
+            <source src="media/The Nights.mp3" type="audio/mp3">
+        </audio>
+        <audio id="bgMusic3" loop preload="auto">
+            <source src="media/Life Story.mp3" type="audio/mp3">
+        </audio>
+        <audio id="bgMusic4" loop preload="auto">
+            <source src="media/Song 4.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    
+    <!-- Music Toggle Button -->
+    <div class="music-toggle music-active">
+        <i class="fas fa-volume-up"></i>
+    </div>
+    
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="media/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content">
+        <div class="container-wrapper">
+            <div class="layout-container">
+                <div class="square-container">
+                    <canvas id="matrixRain"></canvas>
+                    <div class="profile-content">
+                        <div class="profile-picture">
+                            <div class="base-image">
+                                <img src="media/pfp.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="overlay-image">
+                                <img src="media/a_fe63036018fefb8abe3172383497e3bf.png" alt="Second Profile Picture">
+                            </div>
+                        </div>
+                        
+                        <div class="username-container">
+                            <h1 class="username"><i class="fas fa-ghost"></i> Dark_Shadow <i class="fas fa-ghost"></i></h1>
+                            <div class="username-underline"></div>
+                        </div>
+                        
+                        <div class="bio-container">
+                            <div class="bio-header">
+                                <i class="fas fa-terminal"></i> BIO
+                            </div>
+                            <div class="bio-text">
+                                <p>Professional developer navigating both the light and dark realms of code. Master of multiple programming languages and digital security.</p>
+                                <p>Pro developer specializing in <span class="highlight">C++</span>, <span class="highlight">C#</span>, <span class="highlight">Java</span>, <span class="highlight">HTML</span>, <span class="highlight">CSS</span> and <span class="highlight">Ethical Hacking</span>.</p>
+                                <div class="bio-quote">"The only way to do great work is to love what you do."</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-wrapper about-section">
+            <div class="about-container">
+                <canvas id="aboutMatrixRain"></canvas>
+                <div class="about-header">
+                    <i class="fas fa-user-circle"></i> ABOUT ME
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hi everyone, I'm Dev_Shadow, also known as Advaith Praveen. I'm a cybersecurity enthusiast and a developer with expertise in various programming languages. You'll find my skills outlined in the skills section, and I'll be adding some of the projects I've worked on soon. This is one of my ongoing projects, and I hope you all enjoy it! FYI : Yes, I am Owner of DT Sources in discord</p>
+                        <p>Feel free to provide feedback or suggestions for improvements—I'm always open to learning and growing. If you'd like to get in touch, you can reach me at <span class="highlight">advaithpro13@gmail.com</span>.</p>
+                        <p>Wishing you all a fantastic day ahead! Ciao!</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-value"><i class="fas fa-code"></i></div>
+                            <div class="stat-label">Developer</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value"><i class="fas fa-shield-alt"></i></div>
+                            <div class="stat-label">Cybersecurity</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value"><i class="fab fa-discord"></i></div>
+                            <div class="stat-label">DT Sources</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-wrapper second-section">
+            <div class="skills-container">
+                <canvas id="skillsMatrixRain"></canvas>
+                <div class="skills-header">
+                    <i class="fas fa-code"></i> SKILLS
+                </div>
+                <div class="skill">
+                    <div class="skill-name">C++</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="78">
+                            <div class="progress-text">78%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">C#</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="96">
+                            <div class="progress-text">96%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Java</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="92">
+                            <div class="progress-text">92%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="98">
+                            <div class="progress-text">98%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Ethical Hacking</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="77">
+                            <div class="progress-text">77%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Terminal Toggle Button -->
+    <div class="terminal-toggle">
+        <i class="fas fa-terminal"></i>
+    </div>
+    
+    <!-- Floating Terminal -->
+    <div class="floating-terminal">
+        <div class="terminal-header">
+            <i class="fas fa-terminal"></i> CONSOLE
+            <div class="terminal-buttons">
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+                <span class="terminal-button close"></span>
+            </div>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-output" id="terminalOutput">
+                <div class="line">Welcome to Dark_Shadow Terminal v1.0</div>
+                <div class="line">Type <span class="command">help</span> for available commands</div>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">dark_shadow@system:~$</span>
+                <input type="text" id="terminalInput" class="terminal-input" autofocus spellcheck="false">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Music Info Display -->
+    <div class="music-info">
+        <div class="music-title">No track playing</div>
+        <div class="music-controls">
+            <button class="music-prev"><i class="fas fa-step-backward"></i></button>
+            <button class="music-next"><i class="fas fa-step-forward"></i></button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
